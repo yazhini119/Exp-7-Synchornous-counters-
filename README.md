@@ -105,7 +105,7 @@ endmodule
 ### TIMING DIGRAMS FOR COUNTER :
 
 ### UP COUNTER :
-![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/92786b90-8dac-45f8-a135-4c34c67812de)
+![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/3b7ef460-6f6c-4e11-93af-8f217051a31c)
 
 
 ### DOWN COUNTER :
