@@ -3,7 +3,7 @@ Name : Rajalakshmi R
 Reg no : 23013958
 ```
 
-# Exp-6-Synchornous-counters - up counter and down counter 
+# Exp-6 Synchornous counters up counter and down counter 
 
 ## AIM: 
 To implement 3 bit up and down counters and validate  functionality.
@@ -105,7 +105,7 @@ endmodule
 ### TIMING DIGRAMS FOR COUNTER :
 
 ### UP COUNTER :
-![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/89158de5-411a-47f3-8eda-22231afe8e57)
+![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/92786b90-8dac-45f8-a135-4c34c67812de)
 
 
 ### DOWN COUNTER :
@@ -118,7 +118,7 @@ endmodule
 ![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/aab967aa-f5d8-4383-be1d-c19c1e14f121)
 
 ### DOWN COUNTER :
-![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/409de45b-b9cc-4193-9f8a-f91edde7c0c4)
+![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/60826ae1-8fb8-4ce5-9a6e-2a757a5fadb2)
 
 
 ### RESULTS 
