@@ -6,7 +6,7 @@ Reg no : 23013958
 # Exp-6-Synchornous-counters - up counter and down counter 
 
 ## AIM: 
-To implement 4 bit up and down counters and validate  functionality.
+To implement 3 bit up and down counters and validate  functionality.
 
 ## HARDWARE REQUIRED:  
 – PC, Cyclone II , USB flasher
@@ -52,43 +52,41 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 4-bit Count Down Counter
 
 ### Procedure
-1.Create a New Project: Open Quartus and create a new project by selecting "File" > "New Project Wizard." Follow the wizard's instructions to set up your project, including specifying the project name, location, and target device (FPGA). 2.Create a New Design File:
-
-Once the project is created, right-click on the project name in the Project Navigator and select "Add New File." Choose "Verilog HDL File" or "VHDL File," depending on your chosen hardware description language. ⦁ Write the Combinational Logic Code:
-
-Open the newly created Verilog or VHDL file and write the code for your combinational logic. 3.Compile the Project: To compile the project, click on "Processing" > "Start Compilation" in the menu. Quartus will analyze your code, synthesize it into a netlist, and perform optimizations based on your target FPGA device. 4.Analyze and Fix Errors:
-
-If there are any errors or warnings during the compilation process, Quartus will display them in the Messages window. Review and fix any issues in your code if necessary. View the RTL diagram. 5.Verification: Click on "File" > "New" > "Verification/Debugging Files" > "University Program VWF". Once Waveform is created Right Click on the Input/Output Panel > " Insert Node or Bus" > Click on Node Finder > Click On "List" > Select All.
-
-Give the Input Combinations according to the Truth Table and then simulate the Output Waveform.
+1.Create a new project in Quartus II software.
+2.Name the project as uc for upcounter and dc for downcounter.
+3.Create a new Verilog HDL file in the project file.
+4.Name the module as dc and uc for downcounter and upcounter.
+5.Within the module declare input and output variables.
+6.Complete the program.
+7.End the module.
 
 
 ## PROGRAM :
 
 ### UP COUNTER :
 ```
-module exp_6(clk, A);
+module uc(clk, A);
 input clk;
 output reg [2:0]A;
 always @(posedge clk)
 begin
-	A[2]=(((A[0])&(A[1]))^A[2]);
-	A[1]=(A[0])^A[1];
-	A[0]=A[0]^1;
+A[2]=(((A[0])&(A[1]))^A[2]);
+A[1]=(A[0])^A[1];
+A[0]=A[0]^1;
 end
 endmodule
 ```
 
 ### DOWN COUNTER :
 ```
-module EXP_6B(clk,A);
+module dc(clk,A);
 input clk;
-output reg[2:0]A;
+output reg [2:0]A;
 always @(posedge clk)
 begin
-	A[2]=(((~A[0])&(~A[1]))^A[2]);
-	A[1]=(~A[0])^A[1];
-	A[0]=1^A[0];
+A[2]=(((~A[0])&(~A[1]))^A[2]);
+A[1]=(~A[0])^A[1];
+A[0]=1^A[0];
 end
 endmodule
 ```
@@ -96,19 +94,22 @@ endmodule
 ## RTL RELAIZATION : 
 
 ### UP COUNTER:
-![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/a4143de5-ff46-4286-8037-63e45d71d44b)
+![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/817bb625-c00c-4f60-b283-3e6c34e1545e)
+
 
 ### DOWN COUNTER:
-![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/9b524cc1-9a1a-4b3d-9815-21bdd0dbda7f)
+![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/69548da8-2fb2-42b6-939c-187ce9f15376)
+
 
 
 ### TIMING DIGRAMS FOR COUNTER :
 
 ### UP COUNTER :
-![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/5692d144-6372-4faa-960e-9beae6685ed1)
+![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/89158de5-411a-47f3-8eda-22231afe8e57)
+
 
 ### DOWN COUNTER :
-![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/b7efc07f-8a4b-42e6-b850-b88874142cdd)
+![image](https://github.com/Raji1009/Exp-7-Synchornous-counters-/assets/89059861/a2893501-f607-4dfa-a986-058101ae1550)
 
 
 ## TRUTH TABLE :
@@ -121,4 +122,4 @@ endmodule
 
 
 ### RESULTS 
-By this we have verified the truth table of 4-bit up-counter using verilog.
+By this we have verified the truth table of 3-bit up-counter using verilog.
